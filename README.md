@@ -8,7 +8,7 @@ Data Structures and Algorithms library in TypeScript
 
 **interface** and *class or function implement*
 
-# Linear Data Structures
+## Linear Data Structures
 - [x] **Stack**
     - [x] *StackArray*, using native Array
     - [ ] *StackList*, using SinglyLinkedList
@@ -22,7 +22,7 @@ Data Structures and Algorithms library in TypeScript
     - [ ] *QueueList* using SinglyLinkedList
     - [ ] *DequeList* using DoublyLinkedList
 
-# Non-Linear Data Structures
+## Non-Linear Data Structures
 - [ ] **Binary Tree**
   - [ ] *BinTreeNode* using Node model
   
@@ -34,7 +34,7 @@ Data Structures and Algorithms library in TypeScript
   
 - [ ] Graph
 
-#### Algorithms
+## Algorithms
 
 - [ ] sort
     - [ ] bubbleSort
@@ -54,7 +54,6 @@ Data Structures and Algorithms library in TypeScript
 ## Install
 
 ```bash
-tsc
 tsc -w
 node ./js
 ```

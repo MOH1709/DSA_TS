@@ -1,10 +1,14 @@
-import { SinglyLLIf } from "../interfaces";
+import { LinkedListIf } from "../interfaces";
 import LLNode from "./LLNode";
 
-export class SinglyLL<E> implements SinglyLLIf<E> {
+export class SinglyLL<E> implements LinkedListIf<E> {
   private size: number = 0;
   head: LLNode<E> | null = null;
   tail: LLNode<E> | null = null;
+
+  constructor(...values: E[]) {
+    this.insert(...values);
+  }
 
   insert(...values: E[]) {
     for (let value of values) {

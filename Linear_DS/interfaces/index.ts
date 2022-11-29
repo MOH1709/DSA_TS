@@ -1,4 +1,4 @@
 import StackIf from "./Stack";
-import { SinglyLLIf, NodeIf as LLNodeIf } from "./Linked List";
+import { LinkedListIf, NodeIf as LLNodeIf } from "./Linked List";
 
-export { StackIf, SinglyLLIf, LLNodeIf };
+export { StackIf, LinkedListIf, LLNodeIf };

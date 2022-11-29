@@ -1,4 +1,4 @@
-export default interface SinglyLL<E> {
+export default interface LinkedList<E> {
   insert(...values: E[]): number;
 
   delete(values: E): boolean;

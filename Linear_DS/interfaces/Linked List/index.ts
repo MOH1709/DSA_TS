@@ -1,4 +1,4 @@
-import SinglyLLIf from "./SinglyLL";
+import LinkedListIf from "./LinkedList";
 import NodeIf from "./Node";
 
-export { SinglyLLIf, NodeIf };
+export { LinkedListIf, NodeIf };

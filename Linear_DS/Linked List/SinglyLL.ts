@@ -10,6 +10,15 @@ export class SinglyLL<E> implements LinkedListIf<E> {
     this.insert(...values);
   }
 
+  // Function used to implement stack in linked list
+  push(value: E): number {
+    let top = new LLNode(value);
+    top.next = this.head;
+    this.head = top;
+
+    return ++this.size;
+  }
+
   insert(...values: E[]) {
     for (let value of values) {
       if (this.tail === null) {
@@ -46,9 +55,11 @@ export class SinglyLL<E> implements LinkedListIf<E> {
     return true;
   }
 
-  traverse() {
+  traverse(callback?: (value: E) => unknown) {
     for (let i = this.head; i !== null; i = i.next) {
-      console.log(i.value);
+      if (typeof callback === "function") {
+        callback(i.value);
+      }
     }
   }
 

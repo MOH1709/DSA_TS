@@ -16,7 +16,7 @@ let Test = new Index("Index");
 // Test.log();
 
 //-----------------> Testing Linked List
-let LL1 = new SinglyLL();
-LL1.insert(...testArr);
-LL1.delete(true);
-LL1.traverse();
+// let LL1 = new SinglyLL();
+// LL1.insert(...testArr);
+// LL1.delete(true);
+// LL1.traverse();

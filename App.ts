@@ -9,12 +9,12 @@ import {
 let testArr: unknown[] = [true, 2, 3, 4, "5"];
 
 //-----------------> Testing
-// let test1 = new SimpleQ();
-// test1.enqueue(...testArr);
-// test1.dequeue();
-// test1.traverse((val) => {
-//   console.log(val);
-// });
+let test1 = new SimpleQ();
+test1.enqueue(...testArr);
+test1.dequeue();
+test1.traverse((val) => {
+  console.log(val);
+});
 
 // -------------> Testing Stack List
 // let sl1 = new StackList();

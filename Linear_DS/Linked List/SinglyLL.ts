@@ -1,10 +1,10 @@
 import { LinkedListIf } from "../interfaces";
 import LLNode from "./LLNode";
 
-export class SinglyLL<E> implements LinkedListIf<E> {
-  private size: number = 0;
-  head: LLNode<E> | null = null;
-  tail: LLNode<E> | null = null;
+export default class SinglyLL<E> implements LinkedListIf<E> {
+  protected size: number = 0;
+  protected head: LLNode<E> | null = null;
+  protected tail: LLNode<E> | null = null;
 
   constructor(...values: E[]) {
     this.insert(...values);
@@ -46,9 +46,11 @@ export class SinglyLL<E> implements LinkedListIf<E> {
     return true;
   }
 
-  traverse() {
+  traverse(callback?: (value: E) => unknown) {
     for (let i = this.head; i !== null; i = i.next) {
-      console.log(i.value);
+      if (typeof callback === "function") {
+        callback(i.value);
+      }
     }
   }
 

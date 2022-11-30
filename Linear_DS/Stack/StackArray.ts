@@ -3,35 +3,34 @@
  * This file provide the implementation of a Stack using Array
  */
 
-import { StackIf } from "./interfaces";
+import { StackIf } from "../interfaces";
 
-// TODO: do you understand Stack generic Item? 表示一致
 export default class StackArray<Type> implements StackIf<Type> {
   private items: Type[];
-  private len: number = 0;
+  protected top: number = -1;
 
   constructor(iterable?: Iterable<Type>) {
     let inputArr: Type[] = iterable ? [...iterable] : [];
 
-    this.len = inputArr.length;
+    this.top = inputArr.length - 1;
     this.items = inputArr;
   }
 
   push(item: Type): number {
-    this.items[this.len++] = item;
-    return this.len;
+    this.items[++this.top] = item;
+    return this.top;
   }
 
   pop(): Type | undefined {
-    return this.len === 0 ? undefined : this.items[--this.len];
+    return this.top === -1 ? undefined : this.items[this.top--];
   }
 
   peek(): Type | undefined {
-    return this.items[this.len - 1];
+    return this.items[this.top];
   }
 
   isEmpty(): boolean {
-    return this.len === 0;
+    return this.top === -1;
   }
 
   clear(): void {
@@ -39,6 +38,6 @@ export default class StackArray<Type> implements StackIf<Type> {
   }
 
   get length(): number {
-    return this.len;
+    return this.top;
   }
 }

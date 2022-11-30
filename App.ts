@@ -1,22 +1,24 @@
-import { Parent, Global } from "./TS/Basics";
-import { Stack, SinglyLL } from "./Linear_DS";
-
-// implements is use to implement interface in class
-// in class interface declared variable must be there else extra can be added
-class Index extends Parent implements Global {
-  log(): void {
-    console.log(this.name);
-  }
-  extra: boolean = true;
-}
+import {
+  StackArray,
+  SinglyLL,
+  StackList,
+  DoublyLL,
+  SimpleQ,
+} from "./Linear_DS";
 
 let testArr: unknown[] = [true, 2, 3, 4, "5"];
 
-let Test = new Index("Index");
-// Test.log();
+//-----------------> Testing
+// let test1 = new SimpleQ();
+// test1.enqueue(...testArr);
+// test1.dequeue();
+// test1.traverse((val) => {
+//   console.log(val);
+// });
 
-//-----------------> Testing Linked List
-// let LL1 = new SinglyLL();
-// LL1.insert(...testArr);
-// LL1.delete(true);
-// LL1.traverse();
+// -------------> Testing Stack List
+// let sl1 = new StackList();
+// sl1.push(10);
+// sl1.push(20);
+// console.log(sl1.pop());
+// console.log(sl1.peek());

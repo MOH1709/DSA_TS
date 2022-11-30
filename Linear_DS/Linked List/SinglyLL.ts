@@ -1,22 +1,13 @@
 import { LinkedListIf } from "../interfaces";
 import LLNode from "./LLNode";
 
-export class SinglyLL<E> implements LinkedListIf<E> {
-  private size: number = 0;
-  head: LLNode<E> | null = null;
-  tail: LLNode<E> | null = null;
+export default class SinglyLL<E> implements LinkedListIf<E> {
+  protected size: number = 0;
+  protected head: LLNode<E> | null = null;
+  protected tail: LLNode<E> | null = null;
 
   constructor(...values: E[]) {
     this.insert(...values);
-  }
-
-  // Function used to implement stack in linked list
-  push(value: E): number {
-    let top = new LLNode(value);
-    top.next = this.head;
-    this.head = top;
-
-    return ++this.size;
   }
 
   insert(...values: E[]) {

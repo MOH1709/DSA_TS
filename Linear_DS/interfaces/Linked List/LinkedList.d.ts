@@ -1,4 +1,8 @@
 export default interface LinkedList<E> {
+  // size: number = 0;
+  // head: LLNode<E> | null = null;
+  // tail: LLNode<E> | null = null;
+
   /**
    * Insert new values in the list
    * @param values rest parameters

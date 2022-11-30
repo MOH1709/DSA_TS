@@ -1,4 +1,8 @@
+import { LLNode } from "../Linked List";
+
 export default interface Stack<E> {
+  // top: number | LLNode<E> | null;
+
   /**
    * Adds an element to the top of the stack.
    * @param item element

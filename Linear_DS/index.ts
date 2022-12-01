@@ -1,6 +1,18 @@
 import StackArray from "./Stack/StackArray";
 import StackList from "./Stack/StackList";
 import { SinglyLL, DoublyLL } from "./Linked List";
-import { Simple as SimpleQ } from "./Queue";
+import {
+  Simple as SimpleQ,
+  Circular as CircularQ,
+  Priority as PriorityQ,
+} from "./Queue";
 
-export { StackArray, SinglyLL, StackList, DoublyLL, SimpleQ };
+export default {
+  StackArray,
+  SinglyLL,
+  StackList,
+  DoublyLL,
+  SimpleQ,
+  CircularQ,
+  PriorityQ,
+};

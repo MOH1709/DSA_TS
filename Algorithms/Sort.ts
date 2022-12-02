@@ -1,4 +1,4 @@
-export default class Search<E> {
+class Sort<E> {
   linear(values: E[]): E[] {
     let minIndex: number = 0;
 
@@ -18,3 +18,5 @@ export default class Search<E> {
     return values;
   }
 }
+
+export default new Sort();

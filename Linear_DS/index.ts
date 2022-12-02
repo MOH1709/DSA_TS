@@ -5,6 +5,7 @@ import {
   Simple as SimpleQ,
   Circular as CircularQ,
   Priority as PriorityQ,
+  Deque as DequeQ,
 } from "./Queue";
 
 export default {
@@ -15,4 +16,5 @@ export default {
   SimpleQ,
   CircularQ,
   PriorityQ,
+  DequeQ,
 };

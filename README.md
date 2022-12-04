@@ -16,10 +16,12 @@ Data Structures and Algorithms library in TypeScript
 - [x] **LinkedList**
   - [x] _SinglyLinkedList_, using SLNode
   - [x] _DoublyLinkedList_, using DLNode
-- [ ] **Queue**
+- [x] **Queue**
   - [x] _QueueArray_ using native Array
-  - [ ] _QueueList_ using SinglyLinkedList
-  - [ ] _DequeList_ using DoublyLinkedList
+    - [x] _SimpleQueue_
+    - [x] _CircularQueue_
+  - [x] _PriorityQueue_ using SinglyLinkedList
+  - [x] _DequeList_ using DoublyLinkedList
 
 ## Non-Linear Data Structures
 
@@ -33,6 +35,7 @@ Data Structures and Algorithms library in TypeScript
 ## Algorithms
 
 - [ ] sort
+  - [x] linear
   - [ ] bubbleSort
   - [ ] selectionSort
   - [ ] insertionSort

@@ -15,13 +15,13 @@ export default interface Queue<E> {
    * delete the element fron the queue
    * @return {E} the value which is served by the queue.
    */
-  dequeue(): E;
+  dequeue(): E | undefined;
 
   /**
    * returns the element which is going to serve next in the Queue
    * @return {E} the element which is going to serve next.
    */
-  peek(): E;
+  peek(): E | undefined;
 
   /**
    * print all the elements of List

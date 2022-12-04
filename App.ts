@@ -1,20 +1,18 @@
-import {
-  StackArray,
-  SinglyLL,
-  StackList,
-  DoublyLL,
-  SimpleQ,
-} from "./Linear_DS";
+import LinearDS from "./Linear_DS";
+import { Sort } from "./Algorithms";
 
-let testArr: unknown[] = [true, 2, 3, 4, "5"];
+let testArr: unknown[] = [2, "5", 3, 4, true];
+let sortedArr: unknown[] = Sort.linear(testArr);
 
 //-----------------> Testing
-// let test1 = new SimpleQ();
-// test1.enqueue(...testArr);
-// test1.dequeue();
-// test1.traverse((val) => {
-//   console.log(val);
-// });
+let { PriorityQ } = LinearDS;
+let test1 = new PriorityQ();
+test1.enqueue(...sortedArr);
+test1.dequeue();
+console.log("Sorted Array", sortedArr);
+test1.traverse((val) => {
+  console.log("traverse", val);
+});
 
 // -------------> Testing Stack List
 // let sl1 = new StackList();

@@ -35,10 +35,10 @@ Data Structures and Algorithms library in TypeScript
 ## Algorithms
 
 - [ ] sort
-  - [x] linear
-  - [ ] bubbleSort
-  - [ ] selectionSort
-  - [ ] insertionSort
+  - [x] bubbleSort
+  - [x] selectionSort
+  - [x] insertionSort
+  - [x] countingSort
   - [ ] mergeSort
   - [ ] quickSort
   - [ ] heapSort

@@ -25,9 +25,9 @@ Data Structures and Algorithms library in TypeScript
 
 ## Non-Linear Data Structures
 
-- [ ] **Binary Tree**
-  - [ ] _BinTreeNode_ using Node model
-- [ ] PriorityQueue
+- [x] **Binary Tree**
+  - [x] _BinTreeNode_ using Node model
+- [ ] graph
 - [ ] Heap
 - [ ] HashTable
 - [ ] Graph

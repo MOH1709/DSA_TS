@@ -39,7 +39,7 @@ Data Structures and Algorithms library in TypeScript
   - [x] selectionSort
   - [x] insertionSort
   - [x] countingSort
-  - [ ] mergeSort
+  - [x] mergeSort
   - [ ] quickSort
   - [ ] heapSort
   - [ ] bucketSort

@@ -61,6 +61,54 @@ class Sort<E> {
 
     return sortedArr;
   }
+
+  merge(values: number[]): number[] {
+    (function mergeSort(
+      nums: number[],
+      start: number = 0,
+      end: number = nums.length - 1
+    ): void {
+      if (start < end) {
+        let mid = Math.floor((start + end) / 2);
+
+        mergeSort(nums, start, mid);
+        mergeSort(nums, mid + 1, end);
+
+        sort(nums, start, mid, end);
+      }
+    })(values);
+
+    function sort(
+      nums: number[],
+      start: number,
+      mid: number,
+      end: number
+    ): void {
+      let left: number = start,
+        right: number = mid + 1,
+        sortedArr: number[] = [];
+
+      // loop to obtain merged sorted array
+      while (left <= mid && right <= end) {
+        sortedArr.push(nums[left] < nums[right] ? nums[left++] : nums[right++]);
+      }
+
+      while (left <= mid) {
+        sortedArr.push(nums[left++]);
+      }
+
+      while (right <= end) {
+        sortedArr.push(nums[right++]);
+      }
+
+      // loop to copy the element of sorted array in original array
+      for (let i = start, j = 0; i <= end; ) {
+        nums[i++] = sortedArr[j++];
+      }
+    }
+
+    return values;
+  }
 }
 
 export default new Sort();

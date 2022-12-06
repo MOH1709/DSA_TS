@@ -27,24 +27,27 @@ Data Structures and Algorithms library in TypeScript
 
 - [x] **Binary Tree**
   - [x] _BinTreeNode_ using Node model
+- [ ] HashTable
 - [ ] graph
 - [ ] Heap
-- [ ] HashTable
 - [ ] Graph
 
 ## Algorithms
 
 - [ ] sort
-  - [x] bubbleSort
-  - [x] selectionSort
-  - [x] insertionSort
-  - [x] countingSort
-  - [x] mergeSort
-  - [x] quickSort
-  - [ ] heapSort
-  - [ ] bucketSort
-  - [ ] shellSort
-- [ ] search
+  - [x] bubble sort
+  - [x] selection sort
+  - [x] insertion sort
+  - [x] counting sort
+  - [x] merge sort
+  - [x] quick sort
+  - [ ] heap sort
+  - [ ] bucket sort
+  - [ ] shell sort
+- [x] search
+  - [x] linear search
+  - [x] binary search
+  - [x] interpolation search
 - [ ] dfs
 - [ ] bfs
 - [ ] df

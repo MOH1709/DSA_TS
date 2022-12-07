@@ -27,8 +27,7 @@ Data Structures and Algorithms library in TypeScript
 
 - [x] **Binary Tree**
   - [x] _BinTreeNode_ using Node model
-- [ ] HashTable
-- [ ] graph
+- [x] HashTable
 - [ ] Heap
 - [ ] Graph
 

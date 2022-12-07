@@ -1,3 +1,4 @@
 import { BinaryTree } from "./Tree";
+import HashTable from "./HashTable";
 
-export { BinaryTree };
+export { BinaryTree, HashTable };

@@ -21,5 +21,9 @@ export default interface Graph<E> {
    * @param callback callback function, iterate over values of list
    * @return {void}
    */
-  traverse(callback?: (value: unknown) => unknown, method: "BFS" | "DFS"): void;
+  traverse(
+    from: unknown,
+    callback?: (value: unknown) => unknown,
+    method: "BFS" | "DFS"
+  ): void;
 }

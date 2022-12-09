@@ -42,21 +42,49 @@ export default class Graph<E> implements GraphIf<E> {
   }
 
   traverse(
+    from: unknown,
     callback?: (value: unknown) => unknown,
     method: "BFS" | "DFS" = "BFS"
   ): void {
     if (typeof callback === "function") {
-      this[method](callback);
+      if (this.map.has(from)) {
+        this[method](from, callback);
+      } else {
+        console.log("node with value", from, "does not exist");
+      }
     }
   }
 
-  BFS(callback?: (value: unknown) => unknown): void {
+  BFS(from: unknown, callback?: (value: unknown) => unknown): void {
     if (typeof callback === "function") {
       let q = new SimpleQ();
+      let visited: Map<unknown, boolean> = new Map();
+      let startList = this.map.get(from);
+
+      visited.set(from, true);
+      q.enqueue(from);
+
+      while (q.isEmpty() === false) {
+        startList?.traverse((value) => {
+          let curList = this.map.get(value);
+
+          curList?.traverse((node) => {
+            if (visited.has(node) === false) {
+              visited.set(node, true);
+              q.enqueue(node);
+            }
+          });
+
+          from = q.dequeue();
+          if (from !== undefined) {
+            callback(from);
+          }
+        });
+      }
     }
   }
 
-  DFS(callback?: (value: unknown) => unknown): void {
+  DFS(from: unknown, callback?: (value: unknown) => unknown): void {
     if (typeof callback === "function") {
       let stack = new StackArray();
     }

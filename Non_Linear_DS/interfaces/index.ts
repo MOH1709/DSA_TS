@@ -1,5 +1,6 @@
 import TreeIf from "./Tree";
-import TreeNodeIf from "./TreeNode";
+import TreeNodeIf from "./nodes/TreeNode";
 import HashTableIf from "./HashTable";
+import GraphIf from "./Graph";
 
-export { TreeIf, TreeNodeIf, HashTableIf };
+export { TreeIf, TreeNodeIf, HashTableIf, GraphIf };

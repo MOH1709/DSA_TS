@@ -8,7 +8,7 @@ import {
   Deque as DequeQ,
 } from "./Queue";
 
-export default {
+export {
   StackArray,
   SinglyLL,
   StackList,

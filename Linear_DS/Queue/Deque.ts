@@ -19,7 +19,8 @@ export default class Deque<E> extends DoublyLL<E> implements QueueIf<E> {
   }
 
   unshift(...values: E[]): number {
-    for (let value of values) {
+    for (let i = values.length - 1; i >= 0; i--) {
+      let value = values[i];
       let new_node = new LLNode(value);
 
       if (this.head) {

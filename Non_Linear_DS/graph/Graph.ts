@@ -1,6 +1,6 @@
 import { GraphIf } from "../interfaces";
 import { SinglyLL } from "../../Linear_DS/Linked List";
-import { StackArray, SimpleQ } from "../../Linear_DS";
+import { SimpleQ } from "../../Linear_DS";
 
 export default class Graph<E> implements GraphIf<E> {
   private map: Map<unknown, SinglyLL<unknown>> = new Map();
@@ -21,9 +21,9 @@ export default class Graph<E> implements GraphIf<E> {
     for (let node of connects) {
       if (this.map.has(node) === false) {
         console.log("Node with value", node, "Does not exist to connect");
+      } else {
+        list?.insert(node);
       }
-
-      list?.insert(node);
     }
 
     return list ?? null;
@@ -86,7 +86,22 @@ export default class Graph<E> implements GraphIf<E> {
 
   DFS(from: unknown, callback?: (value: unknown) => unknown): void {
     if (typeof callback === "function") {
-      let stack = new StackArray();
+      let isVisited: Map<unknown, boolean> = new Map();
+
+      const dfsTraverse: (key: unknown) => void = (key) => {
+        let list = this.map.get(key);
+
+        if (isVisited.has(key) === false) {
+          isVisited.set(key, true);
+
+          list?.traverse((value) => {
+            dfsTraverse(value);
+          });
+          callback(key);
+        }
+      };
+
+      dfsTraverse(from);
     }
   }
 }

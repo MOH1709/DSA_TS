@@ -22,14 +22,15 @@ Data Structures and Algorithms library in TypeScript
     - [x] _CircularQueue_
   - [x] _PriorityQueue_ using SinglyLinkedList
   - [x] _DequeList_ using DoublyLinkedList
+- [ ] **Data Frame**
 
 ## Non-Linear Data Structures
 
 - [x] **Binary Tree**
   - [x] _BinTreeNode_ using Node model
 - [x] HashTable
+- [x] Graph
 - [ ] Heap
-- [ ] Graph
 
 ## Algorithms
 
@@ -47,9 +48,8 @@ Data Structures and Algorithms library in TypeScript
   - [x] linear search
   - [x] binary search
   - [x] interpolation search
-- [ ] dfs
-- [ ] bfs
-- [ ] df
+- [x] dfs
+- [x] bfs
 - [ ] greedy
 
 ## Install

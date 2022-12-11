@@ -1,11 +1,11 @@
 function twoSum(nums: number[], target: number): (number | string)[] {
-  let numsMap = new Map();
+  let numsMap: Map<number, string> = new Map();
 
   for (let i in nums) {
-    let diff = target - nums[i];
+    let diff = numsMap.get(target - nums[i]);
 
-    if (numsMap.has(diff)) {
-      return [numsMap.get(diff), i]; // returns array containing string type elements
+    if (diff) {
+      return [diff, i]; // returns array containing string type elements
     }
     numsMap.set(nums[i], i);
   }

@@ -6,48 +6,60 @@ import { sorting as data } from "../data";
 
 describe("Selection Sort Test", () => {
   data.forEach((value, index) => {
-    it(value?.label ?? `test_${index}`, () => {
-      expect(Sort.selection(value.input)).toEqual(value.output);
+    const { label, input, output } = value;
+
+    it(label ?? `test_case_${index}`, () => {
+      expect(Sort.selection(input)).toEqual(output);
     });
   });
 });
 
 describe("Bubble Sort Test", () => {
   data.forEach((value, index) => {
-    it(value?.label ?? `test_${index}`, () => {
-      expect(Sort.bubble(value.input)).toEqual(value.output);
+    const { label, input, output } = value;
+
+    it(label ?? `test_case_${index}`, () => {
+      expect(Sort.selection(input)).toEqual(output);
     });
   });
 });
 
 describe("Insertion Sort Test", () => {
   data.forEach((value, index) => {
-    it(value?.label ?? `test_${index}`, () => {
-      expect(Sort.insertion(value.input)).toEqual(value.output);
+    const { label, input, output } = value;
+
+    it(label ?? `test_case_${index}`, () => {
+      expect(Sort.selection(input)).toEqual(output);
     });
   });
 });
 
 describe("Counting Sort Test", () => {
   data.forEach((value, index) => {
-    it(value?.label ?? `test_${index}`, () => {
-      expect(Sort.counting(value.input)).toEqual(value.output);
+    const { label, input, output } = value;
+
+    it(label ?? `test_case_${index}`, () => {
+      expect(Sort.selection(input)).toEqual(output);
     });
   });
 });
 
 describe("Merge Sort Test", () => {
   data.forEach((value, index) => {
-    it(value?.label ?? `test_${index}`, () => {
-      expect(Sort.merge(value.input)).toEqual(value.output);
+    const { label, input, output } = value;
+
+    it(label ?? `test_case_${index}`, () => {
+      expect(Sort.selection(input)).toEqual(output);
     });
   });
 });
 
 describe("Quick Sort Test", () => {
   data.forEach((value, index) => {
-    it(value?.label ?? `test_${index}`, () => {
-      expect(Sort.quick(value.input)).toEqual(value.output);
+    const { label, input, output } = value;
+
+    it(label ?? `test_case_${index}`, () => {
+      expect(Sort.selection(input)).toEqual(output);
     });
   });
 });

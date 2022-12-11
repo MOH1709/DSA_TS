@@ -1,4 +1,8 @@
-export default [
+const data: {
+  label?: string;
+  input: number[];
+  output: number[];
+}[] = [
   {
     label: "sorting the random length array",
     input: [2, 1, 4, 2, 5, 6],
@@ -15,3 +19,5 @@ export default [
     output: [],
   },
 ];
+
+export default data;

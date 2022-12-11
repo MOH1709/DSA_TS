@@ -1,3 +1,3 @@
-import sorting from "./sorting";
+import sorting from "./sorting.data";
 
 export { sorting };

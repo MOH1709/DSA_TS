@@ -43,7 +43,7 @@ class Sort<E> {
   }
 
   counting(values: number[]): number[] {
-    let max = Math.max(...values, values.length);
+    let max = Math.max(...values, values.length) + 1;
     let counts: number[] = new Array(max).fill(0);
 
     for (let value of values) {

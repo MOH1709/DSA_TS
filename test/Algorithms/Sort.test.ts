@@ -28,13 +28,13 @@ describe("Insertion Sort Test", () => {
   });
 });
 
-// describe("Counting Sort Test", () => {
-//   data.forEach((value, index) => {
-//     it(value?.label ?? `test_${index}`, () => {
-//       expect(Sort.counting(value.input)).toEqual(value.output);
-//     });
-//   });
-// });
+describe("Counting Sort Test", () => {
+  data.forEach((value, index) => {
+    it(value?.label ?? `test_${index}`, () => {
+      expect(Sort.counting(value.input)).toEqual(value.output);
+    });
+  });
+});
 
 describe("Merge Sort Test", () => {
   data.forEach((value, index) => {

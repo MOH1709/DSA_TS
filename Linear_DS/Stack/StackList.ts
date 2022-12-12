@@ -15,6 +15,7 @@ export default class StackList<E> extends SinglyLL<E> implements StackIf<E> {
   pop(): E | undefined {
     let poppedVal = this.top?.value;
 
+    this.size--;
     this.top = this.top?.next || null;
     return poppedVal;
   }

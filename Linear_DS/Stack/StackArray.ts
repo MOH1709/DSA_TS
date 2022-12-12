@@ -18,7 +18,7 @@ export default class StackArray<Type> implements StackIf<Type> {
 
   push(item: Type): number {
     this.items[++this.top] = item;
-    return this.top;
+    return this.top + 1;
   }
 
   pop(): Type | undefined {
@@ -38,6 +38,6 @@ export default class StackArray<Type> implements StackIf<Type> {
   }
 
   get length(): number {
-    return this.top;
+    return this.top + 1;
   }
 }

@@ -22,7 +22,7 @@ Data Structures and Algorithms library in TypeScript
     - [x] _CircularQueue_
   - [x] _PriorityQueue_ using SinglyLinkedList
   - [x] _DequeList_ using DoublyLinkedList
-- [ ] **Data Frame**
+  <!-- - [ ] **Data Frame** -->
 
 ## Non-Linear Data Structures
 

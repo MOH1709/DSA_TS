@@ -41,7 +41,7 @@ Data Structures and Algorithms library in TypeScript
   - [x] counting sort
   - [x] merge sort
   - [x] quick sort
-  - [ ] heap sort
+  - [x] heap sort
   - [ ] bucket sort
   - [ ] shell sort
 - [x] search

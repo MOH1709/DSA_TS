@@ -135,6 +135,56 @@ class Sort<E> {
 
     return values;
   }
+
+  heap(values: number[]): number[] {
+    // heapify the array
+    for (let i in values) {
+      (function heapify(current: number): void {
+        if (current === 0) {
+          return;
+        }
+
+        let parent = Math.floor(current / 2);
+        if (values[current] > values[parent]) {
+          [values[parent], values[current]] = [values[current], values[parent]];
+          heapify(parent);
+        }
+      })(+i);
+    }
+
+    // sorting array
+    let n: number = values.length - 1;
+    for (let i in values) {
+      [values[0], values[n]] = [values[n], values[0]];
+
+      (function heapify(parent: number): void {
+        let l: number = parent * 2 + 1;
+        let r: number = l + 1;
+
+        if (parent >= n) {
+          return;
+        }
+
+        let maxVal: number = Math.max(
+          l >= n || values[l] === undefined ? -Infinity : values[l],
+          r >= n || values[r] === undefined ? -Infinity : values[r],
+          values[parent]
+        );
+
+        if (maxVal === values[l]) {
+          [values[l], values[parent]] = [values[parent], values[l]];
+          heapify(l);
+        } else if (maxVal === values[r]) {
+          [values[r], values[parent]] = [values[parent], values[r]];
+          heapify(r);
+        }
+      })(0);
+
+      n--;
+    }
+
+    return values;
+  }
 }
 
 export default new Sort();

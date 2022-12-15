@@ -19,7 +19,7 @@ describe("Bubble Sort Test", () => {
     const { label, input, output } = value;
 
     it(label ?? `test_case_${index}`, () => {
-      expect(Sort.selection(input)).toEqual(output);
+      expect(Sort.bubble(input)).toEqual(output);
     });
   });
 });
@@ -29,7 +29,7 @@ describe("Insertion Sort Test", () => {
     const { label, input, output } = value;
 
     it(label ?? `test_case_${index}`, () => {
-      expect(Sort.selection(input)).toEqual(output);
+      expect(Sort.insertion(input)).toEqual(output);
     });
   });
 });
@@ -39,7 +39,7 @@ describe("Counting Sort Test", () => {
     const { label, input, output } = value;
 
     it(label ?? `test_case_${index}`, () => {
-      expect(Sort.selection(input)).toEqual(output);
+      expect(Sort.counting(input)).toEqual(output);
     });
   });
 });
@@ -49,7 +49,7 @@ describe("Merge Sort Test", () => {
     const { label, input, output } = value;
 
     it(label ?? `test_case_${index}`, () => {
-      expect(Sort.selection(input)).toEqual(output);
+      expect(Sort.merge(input)).toEqual(output);
     });
   });
 });
@@ -59,7 +59,17 @@ describe("Quick Sort Test", () => {
     const { label, input, output } = value;
 
     it(label ?? `test_case_${index}`, () => {
-      expect(Sort.selection(input)).toEqual(output);
+      expect(Sort.quick(input)).toEqual(output);
+    });
+  });
+});
+
+describe("Heap Sort Test", () => {
+  data.forEach((value, index) => {
+    const { label, input, output } = value;
+
+    it(label ?? `test_case_${index}`, () => {
+      expect(Sort.heap(input)).toEqual(output);
     });
   });
 });

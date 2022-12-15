@@ -30,7 +30,7 @@ Data Structures and Algorithms library in TypeScript
   - [x] _BinTreeNode_ using Node model
 - [x] HashTable
 - [x] Graph
-- [ ] Heap
+- [x] Heap
 
 ## Algorithms
 

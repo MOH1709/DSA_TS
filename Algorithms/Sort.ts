@@ -185,6 +185,26 @@ class Sort<E> {
 
     return values;
   }
+
+  bucket(values: number[]): number[] {
+    let len = 10;
+    let buckets = new Array(len);
+
+    for (let value of values) {
+      let index = Math.floor(value / len);
+
+      if (buckets[index]) buckets[index].push(value);
+      else buckets[index] = [value];
+    }
+
+    let sortedArr = [];
+    for (let bucket of buckets) {
+      let sortedBucket = bucket?.sort((a: number, b: number) => a - b) ?? [];
+      sortedArr.push(...sortedBucket);
+    }
+
+    return sortedArr;
+  }
 }
 
 export default new Sort();

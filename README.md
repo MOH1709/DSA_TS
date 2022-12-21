@@ -42,7 +42,7 @@ Data Structures and Algorithms library in TypeScript
   - [x] merge sort
   - [x] quick sort
   - [x] heap sort
-  - [ ] bucket sort
+  - [x] bucket sort
   - [ ] shell sort
 - [x] search
   - [x] linear search
@@ -50,7 +50,7 @@ Data Structures and Algorithms library in TypeScript
   - [x] interpolation search
 - [x] dfs
 - [x] bfs
-- [ ] greedy
+<!-- - [ ] greedy -->
 
 ## Install
 

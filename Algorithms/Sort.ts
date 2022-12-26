@@ -205,6 +205,35 @@ class Sort<E> {
 
     return sortedArr;
   }
+
+  shell(values: number[]): number[] {
+    let n: number = values.length;
+    for (let interval: number = Math.floor(n / 2); interval > 0; ) {
+      for (let i: number = interval; i < n; i += 1) {
+        let cur = values[i];
+        let j: number = i;
+
+        while (j >= interval && values[j - interval] > cur) {
+          values[j] = values[j - interval];
+          j -= interval;
+        }
+        values[j] = cur;
+      }
+
+      interval = Math.floor(interval / 2);
+    }
+    // for (let interval = Math.floor(values.length - 1 / 2); interval > 0; ) {
+    //   for (let i = 0; i < values.length; ) {
+    //     let j = i + interval;
+    //     if (values[j] < values[i]) {
+    //       [values[i], values[j]] = [values[j], values[i]];
+    //     }
+    //     i = j;
+    //   }
+    //   interval = Math.floor(interval / 2);
+    // }
+    return values;
+  }
 }
 
 export default new Sort();

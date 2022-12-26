@@ -34,7 +34,7 @@ Data Structures and Algorithms library in TypeScript
 
 ## Algorithms
 
-- [ ] sort
+- [x] sort
   - [x] bubble sort
   - [x] selection sort
   - [x] insertion sort
@@ -43,7 +43,7 @@ Data Structures and Algorithms library in TypeScript
   - [x] quick sort
   - [x] heap sort
   - [x] bucket sort
-  - [ ] shell sort
+  - [x] shell sort
 - [x] search
   - [x] linear search
   - [x] binary search

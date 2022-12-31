@@ -58,6 +58,10 @@ export default class SinglyLL<E> implements LinkedListIf<E> {
     return this.size;
   }
 
+  get headNode() {
+    return this.head;
+  }
+
   clear(): void {
     this.head = this.tail = null;
     this.size = 0;

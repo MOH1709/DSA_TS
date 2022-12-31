@@ -5,9 +5,9 @@ export default class LLNode<E> implements LLNodeIf<E> {
   next: LLNode<E> | null;
   prev: LLNode<E> | null;
 
-  constructor(value: E) {
+  constructor(value: E, next?: LLNode<E> | null) {
     this.value = value;
-    this.next = null;
+    this.next = next ?? null;
     this.prev = null;
   }
 }

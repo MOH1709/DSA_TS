@@ -1,6 +1,6 @@
 import StackArray from "./Stack/StackArray";
 import StackList from "./Stack/StackList";
-import { SinglyLL, DoublyLL } from "./Linked List";
+import { SinglyLL, DoublyLL, LLNode as ListNode } from "./Linked List";
 import {
   Simple as SimpleQ,
   Circular as CircularQ,
@@ -9,6 +9,7 @@ import {
 } from "./Queue";
 
 export {
+  ListNode,
   StackArray,
   SinglyLL,
   StackList,

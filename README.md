@@ -56,5 +56,5 @@ Data Structures and Algorithms library in TypeScript
 
 ```bash
 tsc -w
-node ./js/App
+jest
 ```

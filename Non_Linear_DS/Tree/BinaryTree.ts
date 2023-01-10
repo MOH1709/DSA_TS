@@ -45,6 +45,10 @@ export default class BinaryTree<E> implements TreeIf<E> {
     }
   }
 
+  get rootNode(): TreeNode<E> | null {
+    return this.root;
+  }
+
   // traversal methods
   private inorder(
     callback: (value: number) => E,

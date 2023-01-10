@@ -1,3 +1,4 @@
 import BinaryTree from "./BinaryTree";
+import TreeNode from "./TreeNode";
 
-export { BinaryTree };
+export { BinaryTree, TreeNode };

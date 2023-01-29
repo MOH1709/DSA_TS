@@ -4,3 +4,4 @@ export { default as lengthOfLongestSubstring } from "./lengthOfLongestSubstring.
 export { default as longestCommonPrefix } from "./longestCommonPrefix.data";
 export { default as mergeKLists } from "./mergeKLists.data";
 export { default as majorityElement } from "./majorityElement.data";
+export { default as climbStairs } from "./climbStairs.data";

@@ -9,4 +9,5 @@
  * we cannot run ts file directly on browser
  * bydefault a variable is of any type
  * never is type of function throws error, not return anything
+ * can assign readonly prop to array for const array
  */
